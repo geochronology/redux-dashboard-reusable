@@ -11,6 +11,7 @@ export const Dashboard = () => {
     async function fetchKpiData() {
       const response = await axios.get(`/api/v1/banking/indicators`)
         .then(res => setKpiData(res.data))
+      // .then(res => console.log(res))
       // return response
     }
 
@@ -20,7 +21,7 @@ export const Dashboard = () => {
   }, [])
 
 
-  const activeTab = useSelector(state => state.nav.activeTabIndex)
+  // const activeTab = useSelector(state => state.nav.activeTabIndex)
   // const [kpiData, setKpiData] = useState({})
   // console.log(data)
   // const { kpis } = views[activeTab]
