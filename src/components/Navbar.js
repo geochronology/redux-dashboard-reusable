@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { switchView } from "../redux";
 
 export const Navbar = ({ views }) => {
-  const activeTab = useSelector(state => state.nav.activeTabIndex)
   const dispatch = useDispatch()
 
   return (
