@@ -1,4 +1,4 @@
-export const indicators = {
+const indicators = {
   totalCash: {
     id: 'totalCash',
     label: 'Total Cash',
@@ -43,5 +43,6 @@ export const indicators = {
     id: 'flows',
     label: 'Flows',
   },
-
 }
+
+export default indicators
