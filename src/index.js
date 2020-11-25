@@ -5,6 +5,12 @@ import App from './App';
 import store from './redux/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import { makeServer } from "./server"
+
+// mock API routes if env is develop
+if (process.env.NODE_ENV === "development") {
+  makeServer({ environment: "development" })
+}
 
 ReactDOM.render(
   <React.StrictMode>
